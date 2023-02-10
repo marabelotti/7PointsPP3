@@ -1,5 +1,5 @@
 # 7PointsPP3
-This repository contains the auxiliary code to the paper "Cox rings and Mukai edge graphs", written by Mara Belotti and Marta Panizzut.
+This repository contains the auxiliary code to the paper "DISCRETE GEOMETRY OF COX RINGS OF BLOW-UPS OF $\mathbb{P}^3$", written by Mara Belotti and Marta Panizzut.
 
 ### About the paper
 The Arxiv identifier 2208.05258.  We prove quadratic generation for the ideal of the Cox ring of
