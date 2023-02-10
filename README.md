@@ -23,6 +23,4 @@ julia> bool
 true
 
 ```
-The necessary code for the proof of Theorem 12 is contained in the tutorial.jl jupyter notebook.
-
-The file Lemma22.ipynb contains the code necessary for the proof of Corollary 22.
+The necessary code for the proof of Theorem 12 is contained in the tutorial.jl jupyter notebook. The file Lemma22.ipynb contains the code necessary for the proof of Corollary 22.
