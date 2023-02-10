@@ -216,8 +216,6 @@ function quartics_sections(A::Matrix{fmpq_mpoly},quad::Vector{fmpq_mpoly},stran:
     ind_j=[3,3,2,3,4,5,6]
     
     for i in 1:7
-        println("We are doing quartic ",i)
-        flush(stdout)
         Q0i=quad[findfirst(x->x==(ind_0[i],i), label)];
         Q0j=quad[findfirst(x->x==(ind_0[i],ind_j[i]), label)];
         Qji=quad[findfirst(x->x==(ind_j[i],i), label)];
