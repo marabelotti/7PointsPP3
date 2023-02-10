@@ -2,7 +2,7 @@
 This repository contains the auxiliary code to the paper *Discrete Geometry of Cox Rings of blow-ups of* $\mathbb{P}^3$ by Mara Belotti and Marta Panizzut.
 
 ### About the paper
-The Arxiv identifier 2208.05258.  We prove quadratic generation for the ideal of the Cox ring of
+The Arxiv identifier is 2208.05258.  We prove quadratic generation for the ideal of the Cox ring of
 the blow-up of $\mathbb{P}^3$ at 7 points, solving a conjecture of Lesieutre and Park. To
 do this we compute Khovanskii bases, implementing techniques which proved
 successful in the case of Del Pezzo surfaces. Such bases give us degenera-
