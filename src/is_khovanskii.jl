@@ -122,7 +122,7 @@ true
 
 """
 
-function degree_two_check(deg_mon::Vector{Vector{Int64}},equations_mon::Vector{fmpq_mpoly})
+function degree_two_check(deg_mon::Vector{Array{Int64}},equations_mon::Vector{fmpq_mpoly})
     couples,deg_couples=degree_quadratic(deg_mon,equations_mon);
 
     vars_S=gens(S_t)[n+2:end];
@@ -184,7 +184,7 @@ julia> initial_form=degree_two_check(equations_mon);
 
 function initial_forms_of_sections(equations_mon::Vector{fmpq_mpoly})
     exc_mon=equations_mon[1:7]
-    hyp_mon=equations_mon[8:7+35]
+    hyps_mon=equations_mon[8:7+35]
     quad_mon=equations_mon[43:42+42]
     cub_mon=equations_mon[85:84+35]
     quart_mon=equations_mon[120:119+7]
@@ -237,7 +237,7 @@ function initial_forms_of_sections(equations_mon::Vector{fmpq_mpoly})
         push!(stra_mon_R,numerator(Toxy(stra_mon[i])*x[1]*x[2]*x[3]*x[4]*x[5]*x[6]*x[7]));
     end
 
-    return exc_mon_R,hyps_mon_R,quad_mon_R,cub_mon_R,quart_mon_R,stra_mon_R;
+    return [exc_mon_R...,hyps_mon_R...,quad_mon_R...,cub_mon_R...,quart_mon_R...,stra_mon_R...];
 end
 
 """
@@ -257,7 +257,7 @@ julia>matrix_of_exponents(initial_forms);
 """
 
 function matrix_of_exponents(initial_forms::Vector{fmpq_mpoly})
-    Ring=equations_mon[1].parent;
+    Ring=initial_forms[1].parent;
     M=zero_matrix(ZZ,129,14);
     for (eq,row) in zip(initial_forms,range(1,129))
         for (var,col) in zip(gens(Ring)[2:end],range(1,14))
