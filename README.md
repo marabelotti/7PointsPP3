@@ -17,8 +17,8 @@ This is a quick example on how to use the code in a julia terminal:
 
 ```julia
 julia> KS, (t,z...)=PolynomialRing(QQ, ["t",["z[$i]" for i in 1:7]...]);
-julia> A=[t^59 t^44 t^79 t^20 t^12 t^81 t^36; t^8 t^72 t^49 t^39 t^58 t^23 t^64; t^44 t^58 t^12 t^52 t^57 t^49 t^51; t^25 t^23 t^60 t^72 t^45 t^51 t^6];
-julia> bool,_=is_khovanskii(A);
+julia> P=[t^59 t^44 t^79 t^20 t^12 t^81 t^36; t^8 t^72 t^49 t^39 t^58 t^23 t^64; t^44 t^58 t^12 t^52 t^57 t^49 t^51; t^25 t^23 t^60 t^72 t^45 t^51 t^6];
+julia> bool,_,_=generalposition_monomeric_check(P);
 julia> bool
 true
 
