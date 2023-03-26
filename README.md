@@ -1,4 +1,4 @@
-# 7PointsPP3
+# Cox ring of the blow up of $7$ points in $\mathbb{P}^3$
 This repository contains the auxiliary code to the paper *Discrete Geometry of Cox Rings of blow-ups of* $\mathbb{P}^3$ by Mara Belotti and Marta Panizzut.
 
 ### About the paper
