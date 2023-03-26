@@ -25,4 +25,4 @@ true
 The necessary code for the proof of Theorem 12 is contained in the tutorial.jl jupyter notebook. The file Lemma22.ipynb contains the code necessary for the proof of Corollary 22.
 
 ### References
-Mara Belotti, Marta Panizzut. [Discrete geometry of Cox rings of blow-ups of $\mathbb{P}^3$, arXiv:2208.05258](https://arxiv.org/abs/2208.05258).
+Mara Belotti, Marta Panizzut. Discrete geometry of Cox rings of blow-ups of $\mathbb{P}^3$, [arXiv:2208.05258](https://arxiv.org/abs/2208.05258).
